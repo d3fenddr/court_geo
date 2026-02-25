@@ -1,0 +1,27 @@
+[
+  {
+    "id": "m_6eabfc35",
+    "courtId": "c_005",
+    "title": "New meeting",
+    "dateTime": "2026-02-25T12:00",
+    "description": "",
+    "recipients": [
+      "u1",
+      "u5"
+    ],
+    "attendance": {
+      "u1": {
+        "status": "present",
+        "checkInAt": "2026-02-25T07:57:24.587Z",
+        "lat": 40.38852963877517,
+        "lng": 49.8758247885162
+      },
+      "u5": {
+        "status": "present",
+        "checkInAt": "2026-02-25T07:57:58.433Z",
+        "lat": 40.388577966600046,
+        "lng": 49.87582058919121
+      }
+    }
+  }
+]
