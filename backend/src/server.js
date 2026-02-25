@@ -37,11 +37,16 @@ app.use((req, res) => {
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Backend running on http://localhost:${PORT}`);
-  // eslint-disable-next-line no-console
-  console.log(
-    `DEV_MODE=${DEV_MODE ? "ON" : "OFF"} (set DEV_MODE=1 to bypass distance check)`,
-  );
-});
+//  Vercel
+export default app;
+
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    // eslint-disable-next-line no-console
+    console.log(`Backend running on http://localhost:${PORT}`);
+    // eslint-disable-next-line no-console
+    console.log(
+      `DEV_MODE=${DEV_MODE ? "ON" : "OFF"} (set DEV_MODE=1 to bypass distance check)`,
+    );
+  });
+}
