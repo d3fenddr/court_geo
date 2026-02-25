@@ -1,2 +1,4 @@
-export const API_BASE = "http://localhost:4000";
-
+export const API_BASE =
+  window.location.hostname === "localhost"
+    ? "http://localhost:4000"
+    : "https://court-geo-backend.vercel.app";
