@@ -96,7 +96,14 @@ After adding Upstash Redis to your Vercel backend project:
    - Redeploy the backend project
    - All `DELETE`, `PUT`, `POST` operations now work on production
 
-✨ The database code (`backend/src/db/jsonStore.js`) handles both seamlessly!
+✨ The database code (`backend/api/src/db/jsonStore.js`) handles both seamlessly!
+
+### Hobby Plan Limitation
+
+⚠️ **Vercel Hobby Plan**: Max 12 Serverless Functions per deployment
+- Backend is configured with only **1 function** (`api/index.js`)
+- All routes are handled by Express through this single function
+- If you hit the limit, upgrade to Pro plan in Vercel
 
 ### Frontend – run SPA
 
