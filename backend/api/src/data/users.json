@@ -1,0 +1,8 @@
+[
+  { "id": "u1", "login": "ayla",  "password": "ayla123",  "name": "Ayla Məmmədova",  "role": "user" },
+  { "id": "u2", "login": "elvin", "password": "elvin123", "name": "Elvin Əliyev",     "role": "user" },
+  { "id": "u3", "login": "nigar", "password": "nigar123", "name": "Nigar Həsənova",   "role": "user" },
+  { "id": "u4", "login": "ramin", "password": "ramin123", "name": "Ramin Quliyev",    "role": "user" },
+  { "id": "u5", "login": "leyla", "password": "leyla123", "name": "Leyla İsmayılova", "role": "user" },
+  { "id": "u6", "login": "admin", "password": "admin123", "name": "Admin User",       "role": "admin" }
+]
